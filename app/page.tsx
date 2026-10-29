@@ -68,13 +68,7 @@ function SpaceScene() {
       <Stars radius={90} depth={55} count={2400} factor={3} saturation={0.15} fade speed={0.25} />
       <points ref={dustRef}>
         <bufferGeometry>
-          <bufferAttribute
-            attach="attributes-position"
-            args={[dust, 3]}
-            count={dust.length / 3}
-            array={dust}
-            itemSize={3}
-          />
+          <bufferAttribute attach="attributes-position" args={[dust, 3]} />
         </bufferGeometry>
         <pointsMaterial color="#d7d9e8" size={0.018} transparent opacity={0.62} sizeAttenuation />
       </points>
